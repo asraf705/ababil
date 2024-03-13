@@ -16,11 +16,14 @@
 
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
 
 <body>
+
+
+
     <!-- Search Wrapper Area Start -->
     <div class="search-wrapper section-padding-100">
         <div class="search-close">
@@ -69,12 +72,15 @@
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="template.html">template</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="template.html">Template</a></li>
+                    <li><a href="team.html">Team</a></li>
                     <li><a href="price.html">Price</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
-            
+            <!-- Button Group -->
+
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
@@ -89,48 +95,25 @@
         </header>
         <!-- Header Area End -->
 
+
         <!-- Product Details Area Start -->
         <div class="single-product-area section-padding-100 clearfix">
             <div class="container-fluid">
 
-           
-
                 <div class="row">
-                    <div class="col-12 col-lg-7">
+                    <div class="col-7 col-lg-4">
                         <div class="single_product_thumb">
                             <div id="product_details_slider" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li class="active" data-target="#product_details_slider" data-slide-to="0" style="background-image: url(img/product-img/pro-big-1.jpg);">
-                                    </li>
-                                    <li data-target="#product_details_slider" data-slide-to="1" style="background-image: url(img/product-img/pro-big-2.jpg);">
-                                    </li>
-                                    <li data-target="#product_details_slider" data-slide-to="2" style="background-image: url(img/product-img/pro-big-3.jpg);">
-                                    </li>
-                                    <li data-target="#product_details_slider" data-slide-to="3" style="background-image: url(img/product-img/pro-big-4.jpg);">
-                                    </li>
-                                </ol>
+
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <a class="gallery_img" href="img/product-img/pro-big-1.jpg">
-                                            <img class="d-block w-100" src="img/product-img/pro-big-1.jpg" alt="First slide">
-                                        </a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a class="gallery_img" href="img/product-img/pro-big-2.jpg">
-                                            <img class="d-block w-100" src="img/product-img/pro-big-2.jpg" alt="Second slide">
-                                        </a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a class="gallery_img" href="img/product-img/pro-big-3.jpg">
-                                            <img class="d-block w-100" src="img/product-img/pro-big-3.jpg" alt="Third slide">
-                                        </a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a class="gallery_img" href="img/product-img/pro-big-4.jpg">
-                                            <img class="d-block w-100" src="img/product-img/pro-big-4.jpg" alt="Fourth slide">
+                                            <img class="d-block w-100" src="img/product-img/pro-big-1.jpg"
+                                                alt="First slide">
                                         </a>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -138,8 +121,9 @@
                         <div class="single_product_desc">
                             <!-- Product Meta Data -->
                             <div class="product-meta-data">
+                                <h4><b>White Modern Chair</b></h4>
                                 <div class="line"></div>
-                                    <h4><b>White Modern Chair</b></h4>
+                                <p class="product-price">$180</p>
                                 <!-- Ratings & Review -->
                                 <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
                                     <div class="ratings">
@@ -149,13 +133,23 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
                             <div class="short_overview my-5">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum rerum culpa amet eius harum ab porro, neque blanditiis natus quia repellendus id itaque expedita non aspernatur quidem, molestias eligendi!</p>
-                            
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum rerum culpa amet eius
+                                    harum ab porro, neque blanditiis natus quia repellendus id itaque expedita non
+                                    aspernatur quidem, molestias eligendi!</p>
+
+                            </div>
+
+                            <!-- Add to Cart Form -->
+                            <div class="cart">
+                                <div class="mb-2 d-flex">
+                                <a href="#" class="btn live-btn">Live View</a>
+                                </div>
+                                <a href="cart.html" class="btn amado-btn">Add to cart</a>
                             </div>
 
                         </div>
@@ -182,8 +176,9 @@
                         <p class="copywrite">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights <i class="fa fa-heart-o" aria-hidden="true"></i><a
-                            href="index.html" target="_blank"> Ababil </a>
+                            <script>document.write(new Date().getFullYear());</script> All rights <i
+                                class="fa fa-heart-o" aria-hidden="true"></i><a href="index.html" target="_blank">
+                                Ababil </a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -194,7 +189,10 @@
                         <!-- Footer Menu -->
                         <div class="footer_menu">
                             <nav class="navbar navbar-expand-lg justify-content-end">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#footerNavContent" aria-controls="footerNavContent"
+                                    aria-expanded="false" aria-label="Toggle navigation"><i
+                                        class="fa fa-bars"></i></button>
                                 <div class="collapse navbar-collapse" id="footerNavContent">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
@@ -202,6 +200,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="template.html">template</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="team.html">Team</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="price.html">Price</a>
